@@ -1,29 +1,36 @@
 html,
 body {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    margin: 0;
 }
 
 section {
     height: 100vh;
 }
 
-section:nth-child(1) {
+.section-caption {
+    padding-top: 2em;
+    margin-left: 2em;
+    margin-top: 0;
+    text-align: left;
+}
+
+#main {
     background: lightblue;
 }
 
-section:nth-child(2) {
+#stable {
     background: lightgreen;
 }
 
-section:nth-child(3) {
+#agrotourism {
     background: purple;
 }
 
-section:nth-child(4) {
+#places-of-interests {
     background: red;
 }
 
-section:nth-child(5) {
+#contact {
     background: yellow;
 }
