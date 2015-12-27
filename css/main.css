@@ -4,9 +4,30 @@ body {
     margin: 0;
 }
 
-section {
-    height: 100vh;
+header {
+    height: 90vh
 }
+
+section {
+    height: 100vh
+}
+
+.navbar {
+    margin-bottom: 0;
+    height: 10vh
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/***********************
+Temporary styles 
+/**********************/
 
 .section-caption {
     padding-top: 2em;
@@ -15,7 +36,7 @@ section {
     text-align: left;
 }
 
-#intro-section {
+#menu {
     background: lightblue;
 }
 
