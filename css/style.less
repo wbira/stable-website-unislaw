@@ -1,0 +1,71 @@
+/*  VARIABLES */
+
+@baseColor: #fff;
+@accentColor: #000;
+
+/*  MIX-INS */
+
+.makeSection(@height: 100vh, @padding-top: 100px) {
+    height: @height;
+    padding-top: @padding-top;
+}
+
+
+/* COMMON */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    h1 {
+        padding-top: 2rem;
+        margin-left: 2rem;
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
+.navbar {
+    margin-bottom: 0;
+    height: 100px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#intro {
+    .makeSection(90vh, 100px);
+    background: lightblue;
+}
+
+#stable {
+    .makeSection();
+    background: lightgreen;
+}
+
+#agrotourism {
+    .makeSection();
+    background: purple;
+}
+
+#places-of-interests {
+    .makeSection();
+    background: red;
+}
+
+#contact {
+    .makeSection();
+    background: yellow;
+}
