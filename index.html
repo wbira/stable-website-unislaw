@@ -9,28 +9,30 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src "js/app.js"></script>
+   
 </head>
 
 <body>
-    <main id="page-content">
+	<!-- TODO: podpowiadanie klas z plikow cutomowych  
+		 	   strukture dokumentu bootstrapowego
+	-->
+    <main id="page-content" class="container-fluid">
         <header id="menu">
             <div class="section-caption">
                 <h1>Strona główna</h1>
                 <p>Gospodatrtwo u Kalinów pitu pitu...</p>
             </div>
         </header>
-        <div id="nav">
+        <nav id="nav">
             <div class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
                     <a href="#" class="navbar-brand">Menusy</a>
                 </div>
             </div>
-        </div>
+        </nav>
         <div id="slides-container">
             <section id="stable">
                 <div class="section-caption">
@@ -50,20 +52,13 @@
             <section id="contact">
                 <div class="section-caption">
                     <h1>Kontakt</h1>
+                    <em></em>
                 </div>
             </section>
         </div>
         <footer></footer>
     </main>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('#nav').affix({
-            offset: {
-                top: $('header').height()
-            }
-        });
-    })
-    </script>
+     <script src="js/app.js"></script>
 </body>
 
 </html>
