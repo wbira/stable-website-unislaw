@@ -12,6 +12,7 @@
 
 
 /* COMMON */
+
 * {
     box-sizing: border-box;
 }
@@ -22,7 +23,7 @@ body {
     width: 100%;
     margin: 0;
     font-size: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 section {
@@ -36,7 +37,6 @@ section {
 
 .navbar {
     margin-bottom: 0;
-    height: 100px;
 }
 
 #nav.affix {
@@ -47,7 +47,19 @@ section {
 
 #intro {
     .makeSection(90vh, 100px);
-    background: lightblue;
+    background: url('../images/stable.jpg') no-repeat;
+    background-size: cover;
+    .jumbotron {
+        background-color: transparent;
+        color: #fff;
+        text-align: right;
+    }
+    hgroup {
+        h1 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    }
 }
 
 #stable {
