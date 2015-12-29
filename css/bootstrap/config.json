@@ -405,8 +405,9 @@
     "dropdown.js",
     "modal.js",
     "tab.js",
+    "affix.js",
     "collapse.js",
     "scrollspy.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=7cffe8ce495f31549540"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=13bda1c472e8ce533b73"
 }
