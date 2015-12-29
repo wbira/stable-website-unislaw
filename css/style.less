@@ -1,9 +1,11 @@
-/*  VARIABLES */
+/******  VARIABLES ******/
 
 @baseColor: #fff;
-@accentColor: #000;
+@navbarBgColor: #000;
+@accentColor: #64DD17;
+@accentColor2: #AEEA00;
 
-/*  MIX-INS */
+/******  MIX-INS ******/
 
 .makeSection(@height: 100vh, @padding-top: 100px) {
     height: @height;
@@ -11,7 +13,7 @@
 }
 
 
-/* COMMON */
+/****** COMMON ******/
 
 * {
     box-sizing: border-box;
@@ -26,10 +28,11 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+
 /* temporary */
+
 section {
     h1 {
-
         padding-top: 2rem;
         margin-left: 2rem;
         margin-top: 0;
@@ -37,21 +40,18 @@ section {
     }
 }
 
+
+/****** NAVBAR ******/
+
 .navbar {
     margin-bottom: 0;
     height: 70px;
     padding-top: 10px;
-        background-color: #080808;
-    border-color: #080808;
+    background-color: @navbarBgColor;
+    border-color: @navbarBgColor;
 }
 
-.navbar .affix{
-    height: 50px;
-    padding-top: 0px;
-}
-
-
-.navbar-right{
+.navbar-right {
     margin-right: 10px;
 }
 
@@ -61,6 +61,9 @@ section {
     width: 100%;
     opacity: 0.8;
 }
+
+
+/****** HEADER ******/
 
 #intro {
     .makeSection(90vh, 100px);
@@ -78,6 +81,9 @@ section {
         }
     }
 }
+
+
+/****** SECTIONS ******/
 
 #stable {
     .makeSection();
