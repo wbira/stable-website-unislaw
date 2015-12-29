@@ -5,7 +5,7 @@ $(document).ready(function() {
         function initialize() {
             $('#nav').affix({
                 offset: {
-                    top: $('header').height()
+                    top: $("header").outerHeight(true)
                 }
             });
         }
