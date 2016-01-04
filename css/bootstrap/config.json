@@ -121,10 +121,10 @@
     "@screen-sm": "768px",
     "@screen-sm-min": "@screen-sm",
     "@screen-tablet": "@screen-sm-min",
-    "@screen-md": "992px",
+    "@screen-md": "1024px",
     "@screen-md-min": "@screen-md",
     "@screen-desktop": "@screen-md-min",
-    "@screen-lg": "1200px",
+    "@screen-lg": "1440px",
     "@screen-lg-min": "@screen-lg",
     "@screen-lg-desktop": "@screen-lg-min",
     "@screen-xs-max": "(@screen-sm-min - 1)",
@@ -392,9 +392,16 @@
     "responsive-utilities.less",
     "navs.less",
     "navbar.less",
+    "jumbotron.less",
+    "thumbnails.less",
+    "alerts.less",
+    "panels.less",
+    "responsive-embed.less",
     "close.less",
     "component-animations.less",
     "dropdowns.less",
+    "tooltip.less",
+    "popovers.less",
     "modals.less",
     "carousel.less"
   ],
@@ -404,10 +411,13 @@
     "carousel.js",
     "dropdown.js",
     "modal.js",
+    "tooltip.js",
+    "popover.js",
     "tab.js",
     "affix.js",
     "collapse.js",
-    "scrollspy.js"
+    "scrollspy.js",
+    "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=13bda1c472e8ce533b73"
+  "customizerUrl": "https://getbootstrap.com/customize/?id=fda4b850501a0b04c02c"
 }
