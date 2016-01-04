@@ -12,6 +12,19 @@
     padding-top: @padding-top;
 }
 
+.makeTransition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+}
+
+.makeOpacity (@opacity: 0.5) {
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    opacity: @opacity;
+}
+
 
 /****** COMMON ******/
 
@@ -44,11 +57,27 @@ section {
 /****** NAVBAR ******/
 
 .navbar {
+    margin-top: -100px;
     margin-bottom: 0;
-    height: 10vh;
-    padding-top: 10px;
+    height: 100px;
     background-color: @navbarBgColor;
     border-color: @navbarBgColor;
+    .makeOpacity(0.8);
+    #collapsableNavbar {
+        ul {
+            li:not(: last-of-type) {
+                border-right: 1px solid @baseColor;
+            }
+            
+            a {
+                .makeTransition(0.5s linear color);
+                &:hover {
+                    color: red;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
 .navbar-right {
@@ -58,6 +87,7 @@ section {
 #nav.affix {
     position: fixed;
     top: 0;
+    margin-top: 100px;
     width: 100%;
 }
 
@@ -65,7 +95,7 @@ section {
 /****** HEADER ******/
 
 #intro {
-    .makeSection(90vh, 100px);
+    .makeSection(100vh, 100px);
     background: url('../images/stable.jpg') no-repeat;
     background-size: cover;
     .jumbotron {

@@ -1,11 +1,11 @@
+/*global $ */
 $(document).ready(function() {
 
     (function UIModule() {
-
         function initialize() {
             $('#nav').affix({
                 offset: {
-                    top: $("header").outerHeight(true)
+                    top: $("header").outerHeight(true) - 100
                 }
             });
         }
@@ -17,3 +17,4 @@ $(document).ready(function() {
     }()).init();
 
 });
+
